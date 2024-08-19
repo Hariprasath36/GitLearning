@@ -1,2 +1,3 @@
 x = "Adhii"
 print(x)
+print("Adhii")
