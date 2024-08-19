@@ -1,5 +1,0 @@
-print("Hi Hari")
-print("Hi Gokul")
-print("Hi Aswin")
-print("Hii Poove")
-print("Hi Gokul")
