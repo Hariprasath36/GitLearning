@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Home Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6f61, #d1c4e9, #81d4fa);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            0% { opacity: 0; transform: translateX(-100%); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            0% { opacity: 0; transform: translateX(100%); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            60% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeIn 2s ease, bounceIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 2.5s ease;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+            animation: slideInLeft 1.5s ease;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            animation: bounceIn 1.8s ease;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+            animation: slideInRight 2s ease, fadeIn 3s ease;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: bounceIn 2.2s ease;
+        }
+
+        .container p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            animation: fadeIn 2.5s ease;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 2s ease;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Vibrant Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Explore Our World</h2>
+        <p>We offer a variety of services that will help you achieve your goals. Browse around to learn more about what we can do for you.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Vibrant Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
