@@ -1,1 +1,1 @@
-print("new file by hp"),
+print("new file by hp")
